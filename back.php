@@ -6,6 +6,16 @@
     <title>Weather Result</title>
     <link rel="icon" type="image/webp" href="logo1.webp">
     <link rel="stylesheet" href="style.css">
+
+    <body>
+    <nav>
+    <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 </head>
 <body>
 

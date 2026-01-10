@@ -16,6 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #eaeaea;
+     padding-top: 80px;
 }
 
 nav {
@@ -50,9 +51,13 @@ nav ul li a {
     position: relative;
     color: #eaeaea;
     text-decoration: none;
-    font-weight: 500;
-    padding: 5px 0;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #6ec1ff;
 }
 
 nav ul li a::after {
@@ -66,13 +71,12 @@ nav ul li a::after {
     transition: width 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #6ec1ff;
-}
-
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
     width: 100%;
 }
+
+
 
 @media (max-width: 600px) {
     nav {

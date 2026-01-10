@@ -6,16 +6,17 @@
     <title>Weather Application</title>
     <link rel="icon" type="image/webp" href="logo1.webp">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 
 </head>
 
 <body>
     <nav>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.php" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
     <div class="container">
