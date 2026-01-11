@@ -1,65 +1,92 @@
-
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/* ===== PAGE LAYOUT (About / Services / Contact) ===== */
 
 .page {
+    width: 100%;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
+    background: rgba(47, 47, 47, 0.85);
+    backdrop-filter: blur(18px);
     padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+    animation: containerFade 0.8s ease;
 }
 
+/* Headings */
+.page h1 {
+    color: #6ec1ff;
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+}
+
+.page h2 {
+    color: #b9ddf5;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* Text */
+.page p {
+    color: #e0e0e0;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+.page ul {
+    margin-left: 20px;
+}
+
+.page ul li {
+    margin-bottom: 10px;
+    color: #dcdcdc;
+    line-height: 1.6;
+}
+
+/* Links inside page */
+.page a {
+    color: #6ec1ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page a:hover {
+    color: #9dd8ff;
+}
+
+/* Section spacing fix */
+.page section {
+    margin-bottom: 25px;
+}
+
+/* ===== RESPONSIVE ===== */
 
 @media (max-width: 768px) {
-
-
-    nav {
-        justify-content: center;
-        height: auto;
-        padding: 12px 15px;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    .container {
-        width: 100%;
-        margin: 15px;
-        padding: 25px;
-    }
-
-
     .page {
-        padding: 20px;
+        margin: 0 20px;
+        padding: 30px;
     }
 
-    h1 {
+    .page h1 {
         font-size: 1.8rem;
     }
 
-    p, li {
+    .page h2 {
+        font-size: 1.2rem;
+    }
+
+    .page p,
+    .page li {
         font-size: 0.95rem;
-        line-height: 1.6;
     }
 }
 
 @media (max-width: 480px) {
-
-    nav ul {
-        gap: 12px;
-    }
-
-    nav ul li a {
-        font-size: 0.95rem;
+    .page {
+        margin: 0 15px;
+        padding: 25px;
+        border-radius: 14px;
     }
 }
